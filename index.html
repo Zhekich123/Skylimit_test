@@ -20,33 +20,41 @@
                 <nav class="navigation">
                     <ul class="nav_list">
                         <img src="./styles/images/logo.png" alt="logo" class="logo_img">
-                        <li class="nav_link">Home</li>
-                        <li class="nav_link">About us</li>
-                        <li class="nav_link">Streaming</li>
-                        <li class="nav_link">News</li>
-                        <li class="nav_link">Contacts</li>
-                        <li class="nav_link">Tournament</li>
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about_us" class="nav_link">
+                                About us
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contacts" class="nav_link">Contacts</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link">Tournament</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="first_screen">
+        <section class="first_screen" id="home">
             <div class="banner_wrapper">
                 <div class="banner_mask"></div>
                 <img src="./styles/images/slider_circle.png" alt="circle" class="banner_circle">
                 <img src="./styles/images/banner.jpg" alt="banner" class="banner">
                 <div class="container first_screen-container">
                     <div class="banner_title">Start it for free!</div>
-                    <div class="banner_button">Just Click!</div>
+                    <a href="https://overwatch.blizzard.com/ru-ru/" target="_blank" class="banner_button">Just Click!</a>
                     <img src="./styles/images/main-img.png" alt="persons" class="banner_persons">
                     <img src="./styles/images/secondary-img.png" alt="person" class="banner_person-second">
                 </div>
             </div>
 
         </section>
-        <section class="second_screen"> 
+        <section class="second_screen">
             <div class="container second_screen-container">
                 <div class="cards">
                     <div class="cards_list">
@@ -112,9 +120,50 @@
                 </div>
             </div>
         </section>
+        <section class="third_screen" id="about_us">
+            <div class="container third_screen-container">
+                <div class="text-wrapper">
+                    <div class="title">Overwatch</div>
+                    <p class="text text_block">
+                        "Overwatch" is a highly acclaimed team-based multiplayer first-person shooter that brings
+                        players
+                        into a vibrant, futuristic world teetering on the brink of chaos. Developed and published by
+                        Blizzard Entertainment, the game showcases a diverse cast of heroes, each with their unique
+                        abilities and playstyles, contributing to the game's dynamic and strategic gameplay.
+                    </p>
+                    <p class="text text_block-2">
+                        Set on a global stage, "Overwatch" revolves around the story of a group of heroes who come
+                        together
+                        to restore peace to a war-torn world. Players can choose from a roster of heroes, each belonging
+                        to
+                        one of three categories: Damage, Tank, or Support. Team coordination and strategic thinking are
+                        crucial as players work together to achieve objectives, defend points, or escort payloads across
+                        a
+                        variety of maps.
+                    </p>
+                    <p class="text text_block-3">
+                        One of the game's defining features is its emphasis on teamwork and hero switching. Players can
+                        switch heroes mid-match to adapt to changing situations, creating a dynamic and engaging
+                        experience.
+                        With a visually stunning art style, engaging lore, and regular updates introducing new heroes
+                        and
+                        content, "Overwatch" continues to captivate players worldwide and remains a prominent title in
+                        the
+                        esports scene. Whether you're a seasoned gamer or a newcomer, "Overwatch" offers an exciting and
+                        ever-evolving multiplayer experience that transcends traditional shooter gameplay. Join the
+                        fight,
+                        choose your hero, and be part of the Overwatch legacy.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-        <div class="container footer-container"></div>
+    <footer class="footer" id="contacts">
+        <div class="copyright_mask">
+            <div class="container footer-container">
+                <div class="copyright_text">© 2023 · Copyright</div>
+            </div>
+        </div>
     </footer>
 </body>
 
