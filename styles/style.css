@@ -9,6 +9,12 @@ body {
     max-width: 1200px;
 }
 
+@font-face {
+    font-family: 'Berlin';
+    src: url('./fonts/berlinsansfbdemi-bold/BRLNSDB.TTF');
+
+}
+
 /* #endregion */
 /* #region header */
 .header {
@@ -46,7 +52,13 @@ body {
     list-style: none;
     cursor: pointer;
     color: #fff;
-    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Berlin';
+    transition: 0.3 ease-in-out;
+}
+
+.nav_link:hover {
+    /* box-shadow: 0 0 10px 15px rgb(250, 0, 154); */
 }
 
 .nav_link::after {
@@ -64,6 +76,7 @@ body {
 
 .nav_link:hover::after {
     transform: scaleX(1);
+    box-shadow: 0 0 10px 5px rgb(250, 0, 154);
 }
 
 /* #endregion */
@@ -122,11 +135,12 @@ body {
     left: 222px;
     top: 40px;
     color: #fff;
+    font-family: 'Berlin';
     font-size: 50px;
     font-weight: 800;
     width: 400px;
     text-align: center;
-    text-shadow: 4px 4px 2px rgba(251, 255, 0, 0.6)
+    text-shadow: 4px 4px 2px rgba(255, 0, 106, 0.815)
 }
 
 .banner_button {
@@ -169,13 +183,80 @@ body {
 /* #endregion */
 /* #region second screen */
 .second_screen {
-    position: relative;
+    background-image: url('./images/image-1.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
-.background_2 {
+.cards {
     width: 100%;
-    height: 800px;
+    margin-top: 100px;
+}
+
+.cards_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    background-color: #021133;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.cards_item:hover {
+    outline: 3px solid #bf2f82;
+    box-shadow: 0 0 10px 15px rgb(250, 0, 154);
+    transform: translateY(-20px);
+}
+
+.cards_image {
+    width: 240px;
+    height: 200px;
     object-fit: cover;
+    object-position: 18px 0px;
+}
+
+.cards_text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.cards_title {
+    font-family: 'Berlin';
+    color: #fff;
+    font-size: 60px;
+}
+
+.cards_description {
+    font-family: 'Berlin';
+    color: #dd2808;
+    font-size: 40px;
+}
+
+.cards_description--support {
+    color: #05c03d;
+}
+
+.cards_description--tank {
+    color: #00d9ff;
+}
+
+.cards_list--2 {
+    margin-top: 40px;
 }
 
 /* #endregion */
