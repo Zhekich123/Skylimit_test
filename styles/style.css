@@ -654,7 +654,7 @@ body {
     }
 
     .banner_title {
-        left: -50px;
+        width: 273px;
         font-size: 40px;
     }
 
@@ -685,6 +685,6 @@ body {
 @media (max-width: 335px) {
     .banner_title {
         font-size: 35px;
-        left: -75px;
+        width: 270px;
     }
 }
