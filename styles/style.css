@@ -195,6 +195,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease-in-out 0.8s;
     text-decoration: none;
+    z-index: 6;
 }
 
 .banner_button:hover {
