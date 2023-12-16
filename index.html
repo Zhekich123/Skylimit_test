@@ -2,213 +2,215 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game layout</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game layout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="body">
-    <header class="header">
-        <div class="container header-container">
-            <div class="navigation_wrapper">
-                <img src="./styles/images/logo.png" alt="logo" class="logo_img-burger">
-                <nav class="navigation">
-                    <ul class="nav_list">
-                        <img src="./styles/images/logo.png" alt="logo" class="logo_img">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link">Home</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#about_us" class="nav_link">
-                                About us
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#contacts" class="nav_link">Contacts</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link">Tournament</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#menu" class="nav_burger-icon"></a>
-            </div>
+  <header class="header">
+    <div class="container header-container">
+      <div class="navigation_wrapper">
+        <img 
+          src="./styles/images/logo.png" 
+          alt="logo" 
+          class="logo_img-burger"
+        >
+        <nav class="navigation">
+          <ul class="nav_list">
+            <img src="./styles/images/logo.png" alt="logo" class="logo_img">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about_us" class="nav_link">
+                About us
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contacts" class="nav_link">Contacts</a>
+            </li>
+            <li class="nav_item">
+              <a href="#home" class="nav_link">Tournament</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#menu" class="nav_burger-icon"></a>
+      </div>
+    </div>
+  </header>
+  <aside class="menu" id="menu">
+    <div class="container burger-container">
+      <div class="navigation_wrapper navigation_wrapper-burger">
+        <img src="./styles/images/logo.png" alt="logo" class="logo_img-burger">
+        <nav class="navigation navigation_burger">
+          <ul class="nav_list nav_list-burger">
+            <li class="nav_item nav_item-burger">
+              <a href="#home" class="nav_link nav_link-burger">Home</a>
+            </li>
+            <li class="nav_item nav_item-burger">
+              <a href="#about_us" class="nav_link nav_link-burger">
+                About us
+              </a>
+            </li>
+            <li class="nav_item nav_item-burger">
+              <a href="#contacts" class="nav_link nav_link-burger">Contacts</a>
+            </li>
+            <li class="nav_item nav_item-burger">
+              <a href="#home" class="nav_link nav_link-burger">Tournament</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="nav_cross-icon"></a>
+      </div>
+    </div>
+  </aside>
+  <main class="main">
+    <section class="first_screen" id="home">
+      <div class="banner_wrapper">
+        <div class="banner_mask"></div>
+        <img src="./styles/images/slider_circle.png" alt="circle" class="banner_circle">
+        <img src="./styles/images/banner.jpg" alt="banner" class="banner">
+        <div class="container first_screen-container">
+          <div class="banner_title">Start it for free!</div>
+          <a href="#" class="banner_button">Just
+            Click!</a>
+          <img 
+            src="./styles/images/iloveimg-compressed/main-img.png" 
+            alt="persons" 
+            class="banner_persons" 
+          >
+          <img src="./styles/images/iloveimg-compressed/secondary-img.png" alt="person" class="banner_person-second">
         </div>
-    </header>
-    <aside class="menu" id="menu">
-        <div class="container burger-container">
-            <div class="navigation_wrapper navigation_wrapper-burger">
-                <img src="./styles/images/logo.png" alt="logo" class="logo_img-burger">
-                <nav class="navigation navigation_burger">
-                    <ul class="nav_list nav_list-burger">
-                        <li class="nav_item nav_item-burger">
-                            <a href="#home" class="nav_link nav_link-burger">Home</a>
-                        </li>
-                        <li class="nav_item nav_item-burger">
-                            <a href="#about_us" class="nav_link nav_link-burger">
-                                About us
-                            </a>
-                        </li>
-                        <li class="nav_item nav_item-burger">
-                            <a href="#contacts" class="nav_link nav_link-burger">Contacts</a>
-                        </li>
-                        <li class="nav_item nav_item-burger">
-                            <a href="#home" class="nav_link nav_link-burger">Tournament</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" class="nav_cross-icon"></a>
-            </div>
-        </div>
-    </aside>
-    <main class="main">
-        <section class="first_screen" id="home">
-            <div class="banner_wrapper">
-                <div class="banner_mask"></div>
-                <img src="./styles/images/slider_circle.png" alt="circle" class="banner_circle">
-                <img src="./styles/images/banner.jpg" alt="banner" class="banner">
-                <div class="container first_screen-container">
-                    <div class="banner_title">Start it for free!</div>
-                    <a href="#" class="banner_button">Just
-                        Click!</a>
-                    <img src="./styles/images/iloveimg-compressed/main-img.png" alt="persons" class="banner_persons">
-                    <img src="./styles/images/iloveimg-compressed/secondary-img.png" alt="person"
-                        class="banner_person-second">
-                </div>
-            </div>
+      </div>
 
-        </section>
-        <section class="second_screen">
-            <div class="container second_screen-container">
-                <div class="cards">
-                    <div class="cards_list-wrapper">
-                        <div class="cards_list">
-                            <div class="cards_item">
-                                <img src="./styles/images/iloveimg-compressed/person-1.png" alt="person-1"
-                                    class="cards_image">
-                                <div class="cards_text-wrapper">
-                                    <div class="cards_title">Soldier 76</div>
-                                    <div class="cards_description">Damager</div>
-                                </div>
-                            </div>
-                            <div class="cards_item">
-                                <img src="./styles/images/iloveimg-compressed/Person-3.png" alt="person-2"
-                                    class="cards_image">
-                                <div class="cards_text-wrapper">
-                                    <div class="cards_title">D.Va</div>
-                                    <div class="cards_description cards_description--support">Support</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards_list card_list--2">
-                            <div class="cards_item">
-                                <img src="./styles/images/iloveimg-compressed/person-8.png" alt="person-3"
-                                    class="cards_image">
-                                <div class="cards_text-wrapper">
-                                    <div class="cards_title">Tracer</div>
-                                    <div class="cards_description">Damager</div>
-                                </div>
-                            </div>
-                            <div class="cards_item">
-                                <img src="./styles/images/iloveimg-compressed/person-2.png" alt="person-4"
-                                    class="cards_image">
-                                <div class="cards_text-wrapper">
-                                    <div class="cards_title">Mei</div>
-                                    <div class="cards_description cards_description--support">Support</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards_list_wrapper--2">
-                        <div class="cards_list cards_list--3">
-                            <div class="cards_item">
-                                <img src="./styles/images/iloveimg-compressed/person-4.png" alt="person-5"
-                                    class="cards_image">
-                                <div class="cards_text-wrapper">
-                                    <div class="cards_title">Reinhardt</div>
-                                    <div class="cards_description cards_description--tank">Tank</div>
-                                </div>
-                            </div>
-                            <div class="cards_item">
-                                <img src="./styles/images/iloveimg-compressed/person-5.png" alt="person-6"
-                                    class="cards_image">
-                                <div class="cards_text-wrapper">
-                                    <div class="cards_title">Hanzo</div>
-                                    <div class="cards_description">Damager</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards_list cards_list--4">
-                            <div class="cards_item">
-                                <img src="./styles/images/iloveimg-compressed/person-6.png" alt="person-7" class="cards_image">
-                                <div class="cards_text-wrapper">
-                                    <div class="cards_title">Winston</div>
-                                    <div class="cards_description cards_description--tank">Tank</div>
-                                </div>
-                            </div>
-                            <div class="cards_item">
-                                <img src="./styles/images/iloveimg-compressed/person-7.png" alt="person-8" class="cards_image">
-                                <div class="cards_text-wrapper">
-                                    <div class="cards_title">Bastion</div>
-                                    <div class="cards_description">Damager</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </section>
+    <section class="second_screen">
+      <div class="container second_screen-container">
+        <div class="cards">
+          <div class="cards_list-wrapper">
+            <div class="cards_list">
+              <div class="cards_item">
+                <img src="./styles/images/iloveimg-compressed/person-1.png" alt="person-1" class="cards_image">
+                <div class="cards_text-wrapper">
+                  <div class="cards_title">Soldier 76</div>
+                  <div class="cards_description">Damager</div>
                 </div>
-            </div>
-        </section>
-        <section class="third_screen" id="about_us">
-            <div class="container third_screen-container">
-                <div class="text-wrapper">
-                    <div class="title">Overwatch</div>
-                    <p class="text text_block">
-                        "Overwatch" is a highly acclaimed team-based multiplayer first-person shooter that brings
-                        players
-                        into a vibrant, futuristic world teetering on the brink of chaos. Developed and published by
-                        Blizzard Entertainment, the game showcases a diverse cast of heroes, each with their unique
-                        abilities and playstyles, contributing to the game's dynamic and strategic gameplay.
-                    </p>
-                    <p class="text text_block-2">
-                        Set on a global stage, "Overwatch" revolves around the story of a group of heroes who come
-                        together
-                        to restore peace to a war-torn world. Players can choose from a roster of heroes, each belonging
-                        to
-                        one of three categories: Damage, Tank, or Support. Team coordination and strategic thinking are
-                        crucial as players work together to achieve objectives, defend points, or escort payloads across
-                        a
-                        variety of maps.
-                    </p>
-                    <p class="text text_block-3">
-                        One of the game's defining features is its emphasis on teamwork and hero switching. Players can
-                        switch heroes mid-match to adapt to changing situations, creating a dynamic and engaging
-                        experience.
-                        With a visually stunning art style, engaging lore, and regular updates introducing new heroes
-                        and
-                        content, "Overwatch" continues to captivate players worldwide and remains a prominent title in
-                        the
-                        esports scene. Whether you're a seasoned gamer or a newcomer, "Overwatch" offers an exciting and
-                        ever-evolving multiplayer experience that transcends traditional shooter gameplay. Join the
-                        fight,
-                        choose your hero, and be part of the Overwatch legacy.
-                    </p>
+              </div>
+              <div class="cards_item">
+                <img src="./styles/images/iloveimg-compressed/Person-3.png" alt="person-2" class="cards_image">
+                <div class="cards_text-wrapper">
+                  <div class="cards_title">D.Va</div>
+                  <div class="cards_description cards_description--support">Support</div>
                 </div>
+              </div>
             </div>
-        </section>
-    </main>
-    <footer class="footer" id="contacts">
-        <div class="copyright_mask">
-            <div class="container footer-container">
-                <div class="copyright_text">© 2023 · Copyright</div>
+            <div class="cards_list card_list--2">
+              <div class="cards_item">
+                <img src="./styles/images/iloveimg-compressed/person-8.png" alt="person-3" class="cards_image">
+                <div class="cards_text-wrapper">
+                  <div class="cards_title">Tracer</div>
+                  <div class="cards_description">Damager</div>
+                </div>
+              </div>
+              <div class="cards_item">
+                <img src="./styles/images/iloveimg-compressed/person-2.png" alt="person-4" class="cards_image">
+                <div class="cards_text-wrapper">
+                  <div class="cards_title">Mei</div>
+                  <div class="cards_description cards_description--support">Support</div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="cards_list_wrapper--2">
+            <div class="cards_list cards_list--3">
+              <div class="cards_item">
+                <img src="./styles/images/iloveimg-compressed/person-4.png" alt="person-5" class="cards_image">
+                <div class="cards_text-wrapper">
+                  <div class="cards_title">Reinhardt</div>
+                  <div class="cards_description cards_description--tank">Tank</div>
+                </div>
+              </div>
+              <div class="cards_item">
+                <img src="./styles/images/iloveimg-compressed/person-5.png" alt="person-6" class="cards_image">
+                <div class="cards_text-wrapper">
+                  <div class="cards_title">Hanzo</div>
+                  <div class="cards_description">Damager</div>
+                </div>
+              </div>
+            </div>
+            <div class="cards_list cards_list--4">
+              <div class="cards_item">
+                <img src="./styles/images/iloveimg-compressed/person-6.png" alt="person-7" class="cards_image">
+                <div class="cards_text-wrapper">
+                  <div class="cards_title">Winston</div>
+                  <div class="cards_description cards_description--tank">Tank</div>
+                </div>
+              </div>
+              <div class="cards_item">
+                <img src="./styles/images/iloveimg-compressed/person-7.png" alt="person-8" class="cards_image">
+                <div class="cards_text-wrapper">
+                  <div class="cards_title">Bastion</div>
+                  <div class="cards_description">Damager</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+    <section class="third_screen" id="about_us">
+      <div class="container third_screen-container">
+        <div class="text-wrapper">
+          <div class="title">Overwatch</div>
+          <p class="text text_block">
+            "Overwatch" is a highly acclaimed team-based multiplayer first-person shooter that brings
+            players
+            into a vibrant, futuristic world teetering on the brink of chaos. Developed and published by
+            Blizzard Entertainment, the game showcases a diverse cast of heroes, each with their unique
+            abilities and playstyles, contributing to the game's dynamic and strategic gameplay.
+          </p>
+          <p class="text text_block-2">
+            Set on a global stage, "Overwatch" revolves around the story of a group of heroes who come
+            together
+            to restore peace to a war-torn world. Players can choose from a roster of heroes, each belonging
+            to
+            one of three categories: Damage, Tank, or Support. Team coordination and strategic thinking are
+            crucial as players work together to achieve objectives, defend points, or escort payloads across
+            a
+            variety of maps.
+          </p>
+          <!-- <p class="text text_block-3">
+            One of the game's defining features is its emphasis on teamwork and hero switching. Players can
+            switch heroes mid-match to adapt to changing situations, creating a dynamic and engaging
+            experience.
+            With a visually stunning art style, engaging lore, and regular updates introducing new heroes
+            and
+            content, "Overwatch" continues to captivate players worldwide and remains a prominent title in
+            the
+            esports scene. Whether you're a seasoned gamer or a newcomer, "Overwatch" offers an exciting and
+            ever-evolving multiplayer experience that transcends traditional shooter gameplay. Join the
+            fight,
+            choose your hero, and be part of the Overwatch legacy.
+          </p> -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="copyright_mask">
+      <div class="container footer-container">
+        <div class="copyright_text">© 2023 · Copyright</div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
